@@ -5,6 +5,8 @@ apt-get update
 
 # version control
 apt-get install -y git
+GIT=`which git`
+echo Installed git at $GIT
 
 # need to have the one true editor
 # in case Neel Smith needs to work on
@@ -41,7 +43,7 @@ ruby-switch --set ruby2.0
 gem install mdpress
 
 # for building morpheus:
-apt-get flex-old
+apt-get install flex-old
 
 # Update and trust apt to clean up some space for us:
 apt-get upgrade
@@ -51,6 +53,32 @@ echo "Ran autoremove."
 
 ## Need to build morpheus
 ## Need to check out and update git repos.
+
+if [ -d "/vagrant/hmt-mom" ]; then
+    echo "Checking HMT-MOM for updates"
+    # Control will enter here if $DIRECTORY exists.
+    cd /vagrant/hmt-mom
+    $GIT pull
+    # git pull
+else
+    echo "Installing HMT-MOM"
+    mkdir /vagrant/hmt-mom
+    cd /vagrant
+    $GIT clone https://github.com/homermultitext/hmt-mom.git
+fi
+
+
+if [ -d "/vagrant/morpheus" ]; then
+    echo "Checking for updates to morphological stems"
+    # Control will enter here if $DIRECTORY exists.
+    cd /vagrant/morpheus
+    $GIT pull
+else
+    echo "Installing morphological stems"
+    mkdir /vagrant/morpheus
+    cd /vagrant
+    $GIT clone https://github.com/homermultitext/morpheus.git
+fi
 
 
 # ADD THIS....
