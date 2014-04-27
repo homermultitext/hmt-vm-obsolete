@@ -51,38 +51,8 @@ apt-get -y autoremove
 
 echo "Ran autoremove."
 
-## Need to build morpheus
-## Need to check out and update git repos.
-
-if [ -d "/vagrant/hmt-mom" ]; then
-    echo "Checking HMT-MOM for updates"
-    # Control will enter here if $DIRECTORY exists.
-    cd /vagrant/hmt-mom
-    $GIT pull
-    # git pull
-else
-    echo "Installing HMT-MOM"
-    mkdir /vagrant/hmt-mom
-    cd /vagrant
-    $GIT clone https://github.com/homermultitext/hmt-mom.git
-fi
-
-
-if [ -d "/vagrant/morpheus" ]; then
-    echo "Checking for updates to morphological stems"
-    # Control will enter here if $DIRECTORY exists.
-    cd /vagrant/morpheus
-    $GIT pull
-else
-    echo "Installing morphological stems"
-    mkdir /vagrant/morpheus
-    cd /vagrant
-    $GIT clone https://github.com/homermultitext/morpheus.git
-fi
-
-
 # ADD THIS....
-#echo "Setting up account directory."
+echo "Setting up account directory.  Need to install .profile"
 #cp "/vagrant/dotprofile" "/home/vagrant/.profile"
 
 
