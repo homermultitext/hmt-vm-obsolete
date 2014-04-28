@@ -2,7 +2,7 @@
 
 
 GIT=`which git`
-echo Installed git at $GIT
+echo git installed at $GIT
 
 
 ## Need to build morpheus
@@ -10,7 +10,6 @@ echo Installed git at $GIT
 
 if [ -d "/vagrant/hmt-mom" ]; then
     echo "Checking HMT-MOM for updates"
-    # Control will enter here if $DIRECTORY exists.
     cd /vagrant/hmt-mom
     $GIT pull
 else
