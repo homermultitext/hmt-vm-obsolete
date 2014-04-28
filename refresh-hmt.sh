@@ -25,10 +25,12 @@ if [ -d "/vagrant/morpheus" ]; then
     cd /vagrant/morpheus
     $GIT pull
 else
-    echo "Installing morphological stems"
+    echo "Installing morphological system"
     cd /vagrant
     echo  Running   $GIT clone https://github.com/homermultitext/morpheus.git
     $GIT clone https://github.com/homermultitext/morpheus.git
+    cd /vagrant/morpheus
+    sh build_linux.sh
 fi
 
 

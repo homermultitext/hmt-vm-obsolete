@@ -43,7 +43,9 @@ ruby-switch --set ruby2.0
 gem install mdpress
 
 # for building morpheus:
+apt-get install -y subversion
 apt-get install flex-old
+
 
 # Update and trust apt to clean up some space for us:
 apt-get upgrade
