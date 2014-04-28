@@ -20,6 +20,22 @@ else
     $GIT clone https://github.com/homermultitext/hmt-mom.git
 fi
 
+
+
+
+if [ -d "/vagrant/hmt-authlists" ]; then
+    echo "Checking for updates to HMT authority lists"
+    cd /vagrant/hmt-authlists
+    $GIT pull
+else
+    echo "Installing HMT authority lists"
+    cd /vagrant
+    echo  Running  $GIT clone https://github.com/homermultitext/hmt-authlists.git
+    $GIT clone https://github.com/homermultitext/hmt-authlists.git
+fi
+
+
+
 if [ -d "/vagrant/morpheus" ]; then
     echo "Checking for updates to morphological stems"
     cd /vagrant/morpheus
