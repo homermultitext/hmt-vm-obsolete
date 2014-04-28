@@ -44,7 +44,7 @@ gem install mdpress
 
 # for building morpheus:
 apt-get install -y subversion
-apt-get install flex-old
+apt-get install -y flex-old
 
 
 # Update and trust apt to clean up some space for us:
@@ -54,7 +54,7 @@ apt-get -y autoremove
 echo "Ran autoremove."
 
 # ADD THIS....
-echo "Setting up account directory.  Need to install .profile"
-#cp "/vagrant/dotprofile" "/home/vagrant/.profile"
+echo "Setting up account directory."
+/bin/cp "/vagrant/dotprofile" "/home/vagrant/.profile"
 
 

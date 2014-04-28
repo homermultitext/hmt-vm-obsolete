@@ -34,8 +34,3 @@ else
 fi
 
 
-# ADD THIS....
-#echo "Setting up account directory."
-#cp "/vagrant/dotprofile" "/home/vagrant/.profile"
-
-
