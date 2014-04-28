@@ -1,2 +1,2 @@
 export MORPHLIB=/vagrant/morpheus/dist/stemlib
-export PATH=/vagrant/morpheus/bin:$PATH
+export PATH=/vagrant/morpheus/bin:$HOME/node_modules/beautiful-docs/bin:$PATH
