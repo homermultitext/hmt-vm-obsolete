@@ -42,10 +42,19 @@ if [ -d "/vagrant/morpheus" ]; then
 else
     echo "Installing morphological system"
     cd /vagrant
+
+    ## This is NFG
     echo  Running   $GIT clone https://github.com/homermultitext/morpheus.git
     $GIT clone https://github.com/homermultitext/morpheus.git
     cd /vagrant/morpheus
     sh build_linux.sh
+
+    cd /vagrant/morpheus/src/morphlib/
+    make morphlib.a
+
+    cd /vagrant/morpheus
+    sh build_linux.sh
+
 fi
 
 
