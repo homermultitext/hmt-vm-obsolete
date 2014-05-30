@@ -13,6 +13,10 @@ echo Installed git at $GIT
 # the machine
 apt-get install -y emacs
 
+# for hosting on Windows
+apt-get install -y dos2unix
+
+
 # Get full JDK *now* so we don't pull in
 # jre as a dependency and have to
 # add jdk later...
