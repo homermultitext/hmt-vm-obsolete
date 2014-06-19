@@ -24,11 +24,33 @@ apt-get install -y openjdk-7-jdk
 
 # build system and dependency mgt
 apt-get install -y gradle
-apt-get install -y maven
+apt-get installapt-get install -y texlive-xetex -y maven
 
 
 # tools for markdown: pandoc
 apt-get install -y pandoc
+
+# .. including make pdfs, so grab
+# entire xetex system, and the whole
+# suite of GFS fonts:
+apt-get install -y texlive
+apt-get install -y texlive-xetex
+apt-get install -y texlive-latex-extra
+
+
+apt-get install -y fonts-gfs-artemisia
+apt-get install -y fonts-gfs-baskerville
+apt-get install -y fonts-gfs-bodoni-classic
+apt-get install -y fonts-gfs-complutum
+apt-get install -y fonts-gfs-didot
+apt-get install -y fonts-gfs-didot-classic
+apt-get install -y fonts-gfs-gazis
+apt-get install -y fonts-gfs-neohellenic
+apt-get install -y fonts-gfs-olga
+apt-get install -y fonts-gfs-porson
+apt-get install -y fonts-gfs-solomos
+apt-get install -y fonts-gfs-theokritos
+
 
 # tools for markdown: beautifuldocs
 apt-get install -y nodejs
