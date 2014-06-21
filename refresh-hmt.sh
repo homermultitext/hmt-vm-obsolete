@@ -8,6 +8,18 @@ echo git installed at $GIT
 ## Need to build morpheus
 ## Need to check out and update git repos.
 
+if [ -d "/vagrant/citedownmgr" ]; then
+    echo "Checking for updates to citedown manager"
+    cd /vagrant/citedownmgr
+    $GIT pull
+else
+    echo "Installing citedown manager"
+    cd /vagrant
+    echo  Running  $GIT clone https://github.com/cite-architecture/citedownmgr.git
+    $GIT clone https://github.com/cite-architecture/citedownmgr.git
+fi
+
+
 if [ -d "/vagrant/hmt-mom" ]; then
     echo "Checking HMT-MOM for updates"
     cd /vagrant/hmt-mom
