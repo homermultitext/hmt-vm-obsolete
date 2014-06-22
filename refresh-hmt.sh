@@ -21,7 +21,7 @@ fi
 
 
 if [ -d "/vagrant/hmt-mom" ]; then
-    echo "Checking HMT-MOM for updates"
+    echo "Checking for updates to HMT-MOM (verification system)"
     cd /vagrant/hmt-mom
     $GIT pull
 else
@@ -43,6 +43,19 @@ else
     cd /vagrant
     echo  Running  $GIT clone https://github.com/homermultitext/hmt-authlists.git
     $GIT clone https://github.com/homermultitext/hmt-authlists.git
+fi
+
+
+
+if [ -d "/vagrant/byzortho" ]; then
+    echo "Checking for updates to orthographic equivalents"
+    cd /vagrant/byzortho
+    $GIT pull
+else
+    echo "Installing orthographic equivalents repository"
+    cd /vagrant
+    echo  Running  $GIT clone https://github.com/homermultitext/byzortho.git
+    $GIT clone https://github.com/homermultitext/byzortho.git
 fi
 
 
