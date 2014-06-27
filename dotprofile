@@ -1,2 +1,15 @@
 export MORPHLIB=/vagrant/morpheus/dist/stemlib
 export PATH=/vagrant/morpheus/bin:$HOME/node_modules/beautiful-docs/bin:$PATH
+
+
+alias didot="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Didot\" "
+alias complutum="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Complutum\" "
+alias olga="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Olga\" "
+alias porson="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Porson\" "
+alias artemisia="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Artemisia\" "
+alias theokritos="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Theokritos\" "
+alias neohellenic="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Neohellenic\" "
+alias bodoni="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS BodoniClassic\" "
+alias baskerville="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Baskerville\" "
+alias gazis="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Gazis\" "
+alias solomos="/usr/bin/pandoc --latex-engine=xelatex --variable mainfont=\"GFS Solomos\" "
