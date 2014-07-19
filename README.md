@@ -7,7 +7,19 @@ A virtual machine for editorial work on Homer Multitext project.
 - vagrant: <http://www.vagrantup.com>
 - virtualbox: <https://www.virtualbox.org/>
 
-## Initial build ##
+
+You can easily verify that you have installed the prerequisites correctly
+by trying out this simple example (from [the Vagrant home page][vaghome)
+of a virtual machine:
+
+    vagrant init hashicorp/precise32
+    vagrant up
+
+
+[vaghome]: http://www.vagrantup.com/
+
+
+## Initial build of HMT VM ##
 
     vagrant up
  
