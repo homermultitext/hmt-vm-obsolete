@@ -29,7 +29,7 @@ out this repository:
 
 ## Regular usage
 
-ssh to the virtual machine 
+Connect to the virtual machine with ssh:
 
     vagrant ssh
     
