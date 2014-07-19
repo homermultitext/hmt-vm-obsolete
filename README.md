@@ -43,6 +43,15 @@ Update all HMT repositories in the virtual machine:
     sh /vagrant/refresh-hmt.sh
 
 
+## More information ##
+
+See the [guides for editors and contributors][guides] on the HMT project
+web site.
+
+
+[guides]: http://www.homermultitext.org/hmt-docs/guides/
+
+
 
     
 
