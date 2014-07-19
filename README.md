@@ -10,7 +10,7 @@ A virtual machine for editorial work on Homer Multitext project.
 ## Initial build ##
 
     vagrant up
-    vagrant plugin install vagrant-vbguest
+ 
 
 ## Regular usage
 
