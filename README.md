@@ -34,7 +34,7 @@ Connect to the virtual machine with ssh:
     vagrant ssh
     
 
-Work in the directory shared with your host machine:
+In the virtual machine, work in the directory shared with your host machine:
 
     cd /vagrant
 
