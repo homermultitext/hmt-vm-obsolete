@@ -9,7 +9,7 @@ A virtual machine for editorial work on Homer Multitext project.
 
 
 You can easily verify that you have installed the prerequisites correctly
-by trying out this simple example (from [the Vagrant home page][vaghome)
+by trying out this simple example (from [the Vagrant home page][vaghome])
 of a virtual machine:
 
     vagrant init hashicorp/precise32
