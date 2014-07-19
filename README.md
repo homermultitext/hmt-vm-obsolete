@@ -21,6 +21,9 @@ by trying out this simple example of a virtual machine
 
 ## Initial build of HMT VM ##
 
+From a terminal in the directory where you have checked
+out this repository:
+
     vagrant up
  
 
@@ -29,8 +32,13 @@ by trying out this simple example of a virtual machine
 ssh to the virtual machine 
 
     vagrant ssh
+    
 
-Then update all HMT repositories in the virtual machine:
+Work in the directory shared with your host machine:
+
+    cd /vagrant
+
+Update all HMT repositories in the virtual machine:
 
     sh /vagrant/refresh-hmt.sh
 
