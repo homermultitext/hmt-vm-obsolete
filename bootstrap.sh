@@ -12,6 +12,10 @@ echo Installed git at $GIT
 # in case Neel Smith needs to work on
 # the machine
 apt-get install -y emacs
+# and the other true editor
+# in case Chris Blackwell needs to work on
+# the machine
+apt-get install -y vim
 
 # for hosting on Windows
 apt-get install -y dos2unix
