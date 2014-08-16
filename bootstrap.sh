@@ -20,6 +20,9 @@ apt-get install -y vim
 # for hosting on Windows
 apt-get install -y dos2unix
 
+# for variety of utilities
+apt-get install -y sqlite
+
 
 # Get full JDK *now* so we don't pull in
 # jre as a dependency and have to
