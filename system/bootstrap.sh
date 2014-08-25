@@ -33,52 +33,9 @@ apt-get install -y openjdk-7-jdk
 apt-get install -y gradle
 apt-get installapt-get install -y texlive-xetex -y maven
 
-
-# tools for markdown: pandoc
-apt-get install -y pandoc
-
-# .. including make pdfs, so grab
-# entire xetex system, and the whole
-# suite of GFS fonts:
-apt-get install -y texlive
-apt-get install -y texlive-xetex
-apt-get install -y texlive-latex-extra
-
-
-apt-get install -y fonts-gfs-artemisia
-apt-get install -y fonts-gfs-baskerville
-apt-get install -y fonts-gfs-bodoni-classic
-apt-get install -y fonts-gfs-complutum
-apt-get install -y fonts-gfs-didot
-apt-get install -y fonts-gfs-didot-classic
-apt-get install -y fonts-gfs-gazis
-apt-get install -y fonts-gfs-neohellenic
-apt-get install -y fonts-gfs-olga
-apt-get install -y fonts-gfs-porson
-apt-get install -y fonts-gfs-solomos
-apt-get install -y fonts-gfs-theokritos
-
-
-# tools for markdown: beautifuldocs
-apt-get install -y nodejs
-if [ -h "/usr/bin/node" ]; then
-    echo "Already have symln for node"
-else
-    sudo ln -s /usr/bin/nodejs /usr/bin/node
-fi
-
-apt-get install -y npm
-npm install beautiful-docs
-
-# tools for markdown: mdpress
-apt-get install -y ruby2.0 ruby2.0-dev build-essential libssl-dev zlib1g-dev ruby-switch
-ruby-switch --set ruby2.0
-gem install mdpress
-
 # for building morpheus:
 apt-get install -y subversion
 apt-get install -y flex-old
-
 
 # Update and trust apt to clean up some space for us:
 apt-get upgrade
