@@ -40,7 +40,7 @@ In the virtual machine, work in the directory shared with your host machine:
 
 Update all HMT repositories in the virtual machine:
 
-    sh /vagrant/refresh-hmt.sh
+    sh /vagrant/scripts/refresh-hmt.sh
 
 
 ## More information ##
