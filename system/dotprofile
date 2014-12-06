@@ -1,0 +1,2 @@
+export PATH=/vagrant/scripts:$PATH
+export CLASSPATH=/vagrant/libs/cd2md-0.0.1.jar
