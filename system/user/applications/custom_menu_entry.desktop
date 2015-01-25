@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=custom menu entry
+Exec=/usr/bin/foo
+Comment=
+Icon=
+NoDisplay=false
+Categories=CustomMenuCategory;
+Type=Application

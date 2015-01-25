@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Refresh HMT
+Name[en_US]=Refresh HMT
+Exec=/vagrant/scripts/refresh-hmt.sh
+Exec=lxterminal --command /bin/bash /vagrant/scripts/hello.sh
+Comment[en_US]=Refresh HMT
+StartupNotify=true
+Categories=Utility
