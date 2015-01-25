@@ -3,7 +3,7 @@
 Version=1.0
 Type=Application
 Terminal=true
-Exec=/bin/bash /vagrant/system/initgui.sh && gnome-terminal -e /vagrant/system/done.sh
+Exec=/bin/bash /vagrant/system/initgui.sh && lxterminal --command /bin/bash /vagrant/scripts/done.sh
 Name=Set up Desktop
-Icon=gnome-panel-launcher
+#Icon=gnome-panel-launcher
 
