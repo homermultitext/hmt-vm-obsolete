@@ -80,6 +80,7 @@ apt-get -y remove gnumeric
 apt-get -y remove guvcview
 apt-get -y remove xfburn
 apt-get -y remove gnome-mplayer
+apt-get -y remove simple-scan
 
 #  /etc/xdg/menus/lxde-applications.menu
 
@@ -94,4 +95,4 @@ sudo chown vagrant:vagrant  Desktop/
 apt-get -y autoremove
 echo "Ran autoremove."
 
-/bin/cp /vagrant/system/initgui.desktop /home/vagrant/Desktop
+#/bin/cp /vagrant/system/initgui.desktop /home/vagrant/Desktop
