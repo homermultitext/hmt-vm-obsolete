@@ -6,6 +6,6 @@ by the updated VM used in the 2015 summer seminar. See the web page for the new 
 
 Because the first release of the new VM `vm2015` is strictly limited to functionality needed for creating HMT editions and
 the 2014 VM had some material for analytical work that will be folded into a later second release of `vm2015`,
-this repository is not yet being deleted. It will be when `vm2015` includes all the material in the 2014 VM.
+this repository is not yet being deleted. It will be when all of its contents are folded into the later release of  `vm2015`.
 
 
